@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KasBudget — Контроль расходов без сложностей</title>
+    <meta
+      name="description"
+      content="KasBudget помогает быстро анализировать банковские PDF-выписки, находить скрытые траты и контролировать бюджет."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <div class="page-bg"></div>
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <img class="brand__logo" src="assets/kasbudget_icon.png" alt="KasBudget logo" />
+        <span class="brand__text">KasBudget</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="nav__link nav__link--active">Главная</a>
+        <a href="faq.html" class="nav__link">FAQ</a>
+        <a href="privacy.html" class="nav__link">Privacy Policy</a>
+        <a href="support.html" class="nav__link nav__link--button">Support</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container reveal">
+        <div class="hero__content">
+          <p class="badge">Локальный анализ банковских выписок</p>
+          <h1>Быстро понять, куда уходят деньги</h1>
+          <p class="hero__text">
+            Загрузите PDF-выписку из банка и получите готовую аналитику:
+            расходы, доходы, категории, мерчанты и динамика по периодам.
+          </p>
+          <div class="hero__actions">
+            <a href="support.html" class="button button--primary">Связаться с поддержкой</a>
+            <a href="#quick-start" class="button button--ghost">Быстрый старт</a>
+          </div>
+        </div>
+        <div class="hero__panel">
+          <div class="metric-card metric-card--income">
+            <p class="metric-card__label">Доходы</p>
+            <p class="metric-card__value">+ ₸ 1 240 000</p>
+            <p class="metric-card__sub">за март 2026</p>
+          </div>
+          <div class="metric-card metric-card--expense">
+            <p class="metric-card__label">Расходы</p>
+            <p class="metric-card__value">- ₸ 913 450</p>
+            <p class="metric-card__sub">-12% к прошлому месяцу</p>
+          </div>
+          <div class="metric-card">
+            <p class="metric-card__label">Топ-мерчант</p>
+            <p class="metric-card__value">Такси</p>
+            <p class="metric-card__sub">₸ 187 400</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section reveal" id="features">
+        <div class="section-head">
+          <h2>Что умеет KasBudget</h2>
+          <p>Фокус на данных, а не на лишнем визуальном шуме.</p>
+        </div>
+        <div class="features-grid">
+          <article class="card">
+            <h3>Авторазбор PDF</h3>
+            <p>Загружайте одну или несколько выписок, KasBudget распознает операции автоматически.</p>
+          </article>
+          <article class="card">
+            <h3>Категории и мерчанты</h3>
+            <p>Сразу видно, на что тратится больше всего и какие подписки съедают бюджет.</p>
+          </article>
+          <article class="card">
+            <h3>Анализ динамики</h3>
+            <p>Сравнивайте расходы по неделям, месяцам и произвольным периодам.</p>
+          </article>
+          <article class="card">
+            <h3>Экспорт отчетов</h3>
+            <p>Сохраняйте аналитику в PDF/CSV/JSON и делитесь с партнером или бухгалтером.</p>
+          </article>
+          <article class="card">
+            <h3>Офлайн-режим</h3>
+            <p>Данные обрабатываются на устройстве, интернет для работы приложения не нужен.</p>
+          </article>
+          <article class="card">
+            <h3>Поддержка банков</h3>
+            <p>Сейчас: Kaspi Bank и Halyk Bank. Freedom Bank добавим в следующих обновлениях.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="container section reveal" id="quick-start">
+        <div class="section-head">
+          <h2>Мини-гайды</h2>
+          <p>Короткие сценарии, чтобы быстрее получить ценность.</p>
+        </div>
+        <div class="guides-grid">
+          <article class="card guide">
+            <h3>Быстрый старт</h3>
+            <p>
+              Откройте приложение → нажмите “Выбрать PDF” → выберите выписку →
+              получите готовую аналитику за минуту.
+            </p>
+          </article>
+          <article class="card guide">
+            <h3>Как найти скрытые траты</h3>
+            <p>
+              Откройте экран мерчантов → отсортируйте по сумме → проверьте топ магазинов
+              и сервисов → отключите лишние подписки.
+            </p>
+          </article>
+          <article class="card guide">
+            <h3>Как контролировать динамику</h3>
+            <p>
+              Перейдите в анализ → выберите период (неделя/месяц/кастом) →
+              сравните тренды и пики расходов → зафиксируйте лимиты.
+            </p>
+          </article>
+          <article class="card guide">
+            <h3>Как поделиться отчетом</h3>
+            <p>
+              Сформируйте аналитику → экспортируйте PDF/CSV/JSON → отправьте себе
+              или партнеру для обсуждения бюджета.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="container section reveal">
+        <div class="section-head">
+          <h2>FAQ</h2>
+          <p>Частые вопросы перед началом работы.</p>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>Что делает KasBudget?</summary>
+            <div class="faq-content">
+              <p>
+                Загружаете банковскую PDF-выписку, а приложение автоматически показывает
+                расходы, доходы, категории, мерчантов и аналитику.
+              </p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Какие банки поддерживаются?</summary>
+            <div class="faq-content">
+              <p>Сейчас: Kaspi Bank и Halyk Bank. Freedom Bank — в планах.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Нужен ли интернет для работы?</summary>
+            <div class="faq-content">
+              <p>Нет, приложение работает офлайн.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Куда отправляются мои данные?</summary>
+            <div class="faq-content">
+              <p>Никуда. Данные обрабатываются локально на устройстве.</p>
+            </div>
+          </details>
+        </div>
+        <a class="link-inline" href="faq.html">Открыть полный FAQ</a>
+      </section>
+
+      <section class="container cta section reveal">
+        <div class="cta__content">
+          <h2>Начните контролировать бюджет уже сегодня</h2>
+          <p>
+            KasBudget создан для тех, кто хочет за минуты увидеть полную картину
+            расходов и принять точные финансовые решения.
+          </p>
+        </div>
+        <div class="cta__actions">
+          <a href="support.html" class="button button--primary">Написать в Support</a>
+          <a href="privacy.html" class="button button--ghost">Privacy Policy</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 KasBudget</p>
+      <div class="footer-links">
+        <a href="faq.html">FAQ</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="support.html">Support</a>
+      </div>
+    </footer>
+
+    <script src="assets/main.js"></script>
+  </body>
+</html>

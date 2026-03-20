@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ — KasBudget</title>
+    <meta
+      name="description"
+      content="Часто задаваемые вопросы о KasBudget: поддержка банков, безопасность данных, офлайн-режим и работа с выписками."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <div class="page-bg"></div>
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <img class="brand__logo" src="assets/kasbudget_icon.png" alt="KasBudget logo" />
+        <span class="brand__text">KasBudget</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="nav__link">Главная</a>
+        <a href="faq.html" class="nav__link nav__link--active">FAQ</a>
+        <a href="privacy.html" class="nav__link">Privacy Policy</a>
+        <a href="support.html" class="nav__link nav__link--button">Support</a>
+      </nav>
+    </header>
+
+    <main class="container static-page reveal">
+      <div class="section-head">
+        <h1>FAQ</h1>
+        <p>Ответы на популярные вопросы о приложении KasBudget.</p>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>Что делает KasBudget?</summary>
+          <div class="faq-content">
+            <p>
+              Загружаете банковскую PDF-выписку, а приложение автоматически показывает
+              расходы, доходы, категории, мерчантов и аналитику.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Какие банки поддерживаются?</summary>
+          <div class="faq-content">
+            <p>Сейчас: Kaspi Bank и Halyk Bank. Freedom Bank — в планах.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Нужен ли интернет для работы?</summary>
+          <div class="faq-content">
+            <p>Нет, приложение работает офлайн.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Куда отправляются мои данные?</summary>
+          <div class="faq-content">
+            <p>Никуда. Данные обрабатываются локально на устройстве.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Можно ли загружать несколько выписок?</summary>
+          <div class="faq-content">
+            <p>Да, можно загрузить один или несколько PDF-файлов.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Что если файл не распознался?</summary>
+          <div class="faq-content">
+            <p>
+              Приложение покажет причину (формат, банк, поврежденный файл и т.д.) и
+              подскажет, что сделать.
+            </p>
+          </div>
+        </details>
+      </div>
+
+      <section class="card static-callout">
+        <h2>Нужна персональная помощь?</h2>
+        <p>
+          Если вашего вопроса нет в списке, отправьте сообщение через страницу Support,
+          и мы поможем разобраться.
+        </p>
+        <a href="support.html" class="button button--primary">Открыть Support</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 KasBudget</p>
+      <div class="footer-links">
+        <a href="index.html">Главная</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="support.html">Support</a>
+      </div>
+    </footer>
+
+    <script src="assets/main.js"></script>
+  </body>
+</html>

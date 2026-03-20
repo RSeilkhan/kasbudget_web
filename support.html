@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Support — KasBudget</title>
+    <meta
+      name="description"
+      content="Связь с поддержкой KasBudget. Отправьте сообщение и контакты прямо из формы."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <div class="page-bg"></div>
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <img class="brand__logo" src="assets/kasbudget_icon.png" alt="KasBudget logo" />
+        <span class="brand__text">KasBudget</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="nav__link">Главная</a>
+        <a href="faq.html" class="nav__link">FAQ</a>
+        <a href="privacy.html" class="nav__link">Privacy Policy</a>
+        <a href="support.html" class="nav__link nav__link--button nav__link--active">Support</a>
+      </nav>
+    </header>
+
+    <main class="container support-page reveal">
+      <div class="section-head">
+        <h1>Support</h1>
+      </div>
+
+      <div class="support-layout">
+        <section class="card support-card">
+          <h2>Форма обращения</h2>
+          <p id="support-hint" class="support-hint">Проверяем подключение Telegram...</p>
+
+          <form id="support-form" class="support-form">
+            <label for="name">Имя</label>
+            <input id="name" name="name" type="text" placeholder="Ваше имя" required />
+
+            <label for="contact">Контакт</label>
+            <input
+              id="contact"
+              name="contact"
+              type="text"
+              placeholder="Email или @telegram"
+              required
+            />
+
+            <label for="topic">Тема</label>
+            <input id="topic" name="topic" type="text" placeholder="Коротко о вопросе" />
+
+            <label for="message">Сообщение</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="7"
+              placeholder="Опишите проблему или пожелание"
+              required
+            ></textarea>
+
+            <button type="submit" class="button button--primary">Отправить</button>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </section>
+
+        <aside class="card support-note">
+          <h3>Что можно написать</h3>
+          <ul>
+            <li>Ошибки распознавания выписки</li>
+            <li>Предложения по новым банкам</li>
+            <li>Вопросы по экспорту отчетов</li>
+            <li>Идеи по улучшению аналитики</li>
+          </ul>
+          <p>
+            Для быстрого ответа укажите банк, формат выписки и краткое описание шага,
+            на котором возникла проблема.
+          </p>
+        </aside>
+      </div>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>FAQ для Support</h2>
+          <p>Пара быстрых ответов перед отправкой обращения.</p>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>Что делать, если выписка не распозналась?</summary>
+            <div class="faq-content">
+              <p>
+                Проверьте банк, формат PDF и целостность файла. Если проблема повторяется,
+                отправьте обращение через форму.
+              </p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Можно загрузить несколько выписок сразу?</summary>
+            <div class="faq-content">
+              <p>Да, KasBudget поддерживает загрузку одного или нескольких PDF-файлов.</p>
+            </div>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 KasBudget</p>
+      <div class="footer-links">
+        <a href="index.html">Главная</a>
+        <a href="faq.html">FAQ</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </footer>
+
+    <script src="assets/main.js"></script>
+    <script src="assets/support.js"></script>
+  </body>
+</html>
